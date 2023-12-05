@@ -1,0 +1,37 @@
+:root {
+    --yale-blue: #002F75;
+    --denim: #005AB0;
+    --midnight-green: #073F4C;
+    --paynes-gray: #50667D;
+    --reseda-green: #72854D;
+    --hunter-green: #40603B;
+    --caput-mortuum-dark: #452324;
+    --caput-mortuum-light: #63241F;
+    --burnt-umber: #88271E;
+}
+
+body {
+    background-color: var(--paynes-gray);
+}
+
+.page-title {
+    background-color: var(--paynes-gray);
+    padding: 2rem;
+}
+
+.page-subtitle {
+    /* background-color: var(--denim); */
+    padding: 2rem;
+}
+
+.search-bar {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.next-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 3rem;
+}
