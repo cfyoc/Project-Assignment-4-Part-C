@@ -51,8 +51,10 @@
 
     <script>
         function addAspect() {
-            var input = document.getElementById("aspect-input").value; var
-                table = document.getElementById("bulma-table"); var row = table.insertRow(0); var cell = row.insertCell(0);
+            var input = document.getElementById("aspect-input").value;
+            var table = document.getElementById("bulma-table");
+            var row = table.insertRow(0);
+            var cell = row.insertCell(0);
             cell.innerHTML = "<button class='delete' onclick='deleteRow(this)'></button>" + input;
         }
 

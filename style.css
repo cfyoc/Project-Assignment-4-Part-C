@@ -65,7 +65,7 @@ h1 {
     position: sticky;
 }
 
-.delete {
+.delete-card {
     position: absolute !important;
     top: 1rem !important;
     right: 1rem !important;
