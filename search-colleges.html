@@ -13,6 +13,17 @@
 </head>
 
 <body>
+    <datalist id="colleges">
+        <option value="Worcester Polytechnic Institute">
+        <option value="Rhode Island School of Design">
+        <option value="Worcester State University">
+        <option value="Wheaton College">
+        <option value="College of the Holy Cross">
+        <option value="University of Connecticut">
+        <option value="University of California, Los Angeles">
+        <option value="Clark Univeristy">
+    </datalist>
+
     <nav class="navbar has-shadow is-light" role="navigation" aria-label="main navigation"
         style="background: var(--yale-blue);">
         <div class="navbar-brand">
@@ -24,27 +35,30 @@
     </nav>
 
     <div>
-        <h1 class="title page-title">What are YOUR most important aspects when picking a college?
+        <h1 class="title page-title">What are some colleges that interest you?
         </h1>
         <div class="search-bar">
-            <input id="aspect-input" class="input is-rounded is-centered" type="text" placeholder="Sports">
-            <button class="button is-primary is-outlined" style="background-color:var(--yale-blue);"
+            <input list="colleges" id="aspect-input" class="input is-rounded is-centered" type="text"
+                placeholder="Worcester Polytechnic Institute">
+            <button class="button is-info is-outlined" style="background-color:var(--yale-blue);"
                 onclick="addAspect()">+</button>
         </div>
-        <h1 class="subtitle page-subtitle">Current aspects:</h1>
+        <h1 class="subtitle page-subtitle">Current colleges:</h1>
         <div class="page-subtitle">
             <table class="table is-hoverable" id="bulma-table">
                 <tbody>
-                    <!-- Intentionally left empty so the user can input items into the table -->
+
                 </tbody>
             </table>
         </div>
     </div>
 
-
     <footer>
+        <div class="prev-button">
+            <button class="button is-rounded is-primary" onclick="location.href='index.html';">Previous</button>
+        </div>
         <div class="next-button">
-            <button class="button is-rounded is-primary" onclick="location.href='search-colleges.html';">Next</button>
+            <button class="button is-rounded is-primary" onclick="location.href='compare-colleges.html';">Next</button>
         </div>
     </footer>
 
